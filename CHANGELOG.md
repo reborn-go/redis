@@ -1,11 +1,11 @@
-## [8.11.4](https://github.com/go-redis/redis/compare/v8.11.3...v8.11.4) (2021-10-04)
+## [8.11.4](https://github.com/reborn-go/redis/compare/v8.11.3...v8.11.4) (2021-10-04)
 
 
 ### Features
 
-* add acl auth support for sentinels ([f66582f](https://github.com/go-redis/redis/commit/f66582f44f3dc3a4705a5260f982043fde4aa634))
-* add Cmd.{String,Int,Float,Bool}Slice helpers and an example ([5d3d293](https://github.com/go-redis/redis/commit/5d3d293cc9c60b90871e2420602001463708ce24))
-* add SetVal method for each command ([168981d](https://github.com/go-redis/redis/commit/168981da2d84ee9e07d15d3e74d738c162e264c4))
+* add acl auth support for sentinels ([f66582f](https://github.com/reborn-go/redis/commit/f66582f44f3dc3a4705a5260f982043fde4aa634))
+* add Cmd.{String,Int,Float,Bool}Slice helpers and an example ([5d3d293](https://github.com/reborn-go/redis/commit/5d3d293cc9c60b90871e2420602001463708ce24))
+* add SetVal method for each command ([168981d](https://github.com/reborn-go/redis/commit/168981da2d84ee9e07d15d3e74d738c162e264c4))
 
 
 
@@ -38,8 +38,8 @@
   you need to update your imports:
 
 ```
-github.com/go-redis/redis/extra/redisotel -> github.com/go-redis/redis/extra/redisotel/v8
-github.com/go-redis/redis/extra/rediscensus -> github.com/go-redis/redis/extra/rediscensus/v8
+github.com/reborn-go/redis/extra/redisotel -> github.com/reborn-go/redis/extra/redisotel/v8
+github.com/reborn-go/redis/extra/rediscensus -> github.com/reborn-go/redis/extra/rediscensus/v8
 ```
 
 ## v8.5
@@ -53,7 +53,7 @@ err := rdb.HGetAll(ctx, "hash").Scan(&data)
 err := rdb.MGet(ctx, "key1", "key2").Scan(&data)
 ```
 
-- Please check [redismock](https://github.com/go-redis/redismock) by
+- Please check [redismock](https://github.com/reborn-go/redismock) by
   [monkey92t](https://github.com/monkey92t) if you are looking for mocking Redis Client.
 
 ## v8
@@ -146,4 +146,4 @@ ring := redis.NewRing(&redis.RingOptions{
 
 - ClusterClient got new option called `ClusterSlots` which allows to build cluster of normal Redis
   Servers that don't have cluster mode enabled. See
-  https://godoc.org/github.com/go-redis/redis#example-NewClusterClient--ManualSetup
+  https://godoc.org/github.com/reborn-go/redis#example-NewClusterClient--ManualSetup

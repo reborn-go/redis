@@ -6,17 +6,17 @@
 
 # Redis client for Golang
 
-![build workflow](https://github.com/go-redis/redis/actions/workflows/build.yml/badge.svg)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/go-redis/redis/v8)](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc)
+![build workflow](https://github.com/reborn-go/redis/actions/workflows/build.yml/badge.svg)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/reborn-go/redis/v8)](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc)
 [![Documentation](https://img.shields.io/badge/redis-documentation-informational)](https://redis.uptrace.dev/)
 [![Chat](https://discordapp.com/api/guilds/752070105847955518/widget.png)](https://discord.gg/rWtp5Aj)
 
 - To ask questions, join [Discord](https://discord.gg/rWtp5Aj) or use
-  [Discussions](https://github.com/go-redis/redis/discussions).
+  [Discussions](https://github.com/reborn-go/redis/discussions).
 - [Newsletter](https://blog.uptrace.dev/pages/newsletter.html) to get latest updates.
 - [Documentation](https://redis.uptrace.dev)
-- [Reference](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc)
-- [Examples](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#pkg-examples)
+- [Reference](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc)
+- [Examples](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#pkg-examples)
 - [RealWorld example app](https://github.com/uptrace/go-treemux-realworld-example-app)
 
 Other projects you may like:
@@ -26,28 +26,28 @@ Other projects you may like:
 
 ## Ecosystem
 
-- [Redis Mock](https://github.com/go-redis/redismock).
+- [Redis Mock](https://github.com/reborn-go/redismock).
 - [Distributed Locks](https://github.com/bsm/redislock).
 - [Redis Cache](https://github.com/go-redis/cache).
-- [Rate limiting](https://github.com/go-redis/redis_rate).
+- [Rate limiting](https://github.com/reborn-go/redis_rate).
 
 ## Features
 
 - Redis 3 commands except QUIT, MONITOR, and SYNC.
 - Automatic connection pooling with
   [circuit breaker](https://en.wikipedia.org/wiki/Circuit_breaker_design_pattern) support.
-- [Pub/Sub](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#PubSub).
-- [Transactions](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#example-Client-TxPipeline).
-- [Pipeline](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#example-Client.Pipeline) and
-  [TxPipeline](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#example-Client.TxPipeline).
-- [Scripting](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#Script).
-- [Timeouts](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#Options).
-- [Redis Sentinel](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#NewFailoverClient).
-- [Redis Cluster](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#NewClusterClient).
-- [Cluster of Redis Servers](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#example-NewClusterClient-ManualSetup)
+- [Pub/Sub](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#PubSub).
+- [Transactions](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#example-Client-TxPipeline).
+- [Pipeline](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#example-Client.Pipeline) and
+  [TxPipeline](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#example-Client.TxPipeline).
+- [Scripting](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#Script).
+- [Timeouts](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#Options).
+- [Redis Sentinel](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#NewFailoverClient).
+- [Redis Cluster](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#NewClusterClient).
+- [Cluster of Redis Servers](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#example-NewClusterClient-ManualSetup)
   without using cluster mode and Redis Sentinel.
-- [Ring](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#NewRing).
-- [Instrumentation](https://pkg.go.dev/github.com/go-redis/redis/v8?tab=doc#example-package-Instrumentation).
+- [Ring](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#NewRing).
+- [Instrumentation](https://pkg.go.dev/github.com/reborn-go/redis/v8?tab=doc#example-package-Instrumentation).
 
 ## Installation
 
@@ -62,7 +62,7 @@ go mod init github.com/my/repo
 And then install go-redis/v8 (note _v8_ in the import; omitting it is a popular mistake):
 
 ```shell
-go get github.com/go-redis/redis/v8
+go get github.com/reborn-go/redis/v8
 ```
 
 ## Quickstart
@@ -70,7 +70,7 @@ go get github.com/go-redis/redis/v8
 ```go
 import (
     "context"
-    "github.com/go-redis/redis/v8"
+    "github.com/reborn-go/redis/v8"
 )
 
 var ctx = context.Background()
@@ -172,6 +172,6 @@ go test
 
 Thanks to all the people who already contributed!
 
-<a href="https://github.com/go-redis/redis/graphs/contributors">
+<a href="https://github.com/reborn-go/redis/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=go-redis/redis" />
 </a>

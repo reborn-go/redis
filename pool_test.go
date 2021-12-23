@@ -7,7 +7,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/go-redis/redis/v8"
+	"github.com/reborn-go/redis/v8"
 )
 
 var _ = Describe("pool", func() {
@@ -105,7 +105,7 @@ var _ = Describe("pool", func() {
 	})
 
 	It("reuses connections", func() {
-		// explain: https://github.com/go-redis/redis/pull/1675
+		// explain: https://github.com/reborn-go/redis/pull/1675
 		opt := redisOptions()
 		opt.MinIdleConns = 0
 		opt.MaxConnAge = 0

@@ -9,7 +9,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/go-redis/redis/v8/internal/proto"
+	"github.com/reborn-go/redis/v8/internal/proto"
 )
 
 type MyType struct{}
